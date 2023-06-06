@@ -1,0 +1,160 @@
+body {
+  font-family: "メイリオ" serif;
+  text-align: center;
+}
+
+header {
+  text-align: left;
+  width: 1000px;
+  margin: 60px auto 15px;
+  height: 18px;
+}
+
+.mainvisual {
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.index,
+.photos,
+.detail {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.index,
+.detail {
+  background-color: #f5f5f5;
+  padding: 60px;
+}
+
+.index ol {
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.index ol li {
+  text-align: left;
+  padding: 15px;
+  list-style: decimal inside;
+  margin-left: 1.25em;
+  text-indent: -1.25em;
+}
+
+.photos {
+  padding-top: 60px;
+  margin: 0 auto;
+  display: grid;
+  grid-template:
+    "photo1 photo2"
+    "photo3 photo4";
+  gap: 16px;
+}
+
+.detail {
+  margin-top: 60px;
+}
+
+.detail__box {
+  display: flex;
+  text-align: left;
+}
+
+.detail__box--data {
+  flex: 1;
+  padding-right: 70px;
+  border-right: 1px solid black;
+}
+
+.detail__box--data h3 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.detail__box--data p {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.detail__box--texts {
+  flex: 2;
+  padding-left: 30px;
+}
+
+.detail__box--texts p {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.detail__box--texts a {
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+footer {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 75px;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    text-align: left;
+    width: 100%;
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    height: 18px;
+  }
+
+  .mainvisual {
+    width: 100%;
+  }
+
+  .index,
+  .photos,
+  .detail {
+    width: 90%;
+  }
+
+  .index {
+    padding: 20px;
+  }
+
+  .photos {
+    grid-template:
+      "photo1"
+      "photo2"
+      "photo3"
+      "photo4";
+    gap: 16px;
+    place-items: center;
+  }
+
+  .detail {
+    padding: 20px;
+  }
+
+  .detail__box {
+    flex-direction: column;
+  }
+
+  .detail__box--data {
+    padding-right: 0;
+    border-right: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+  }
+
+  .detail__box--texts {
+    padding-left: 0;
+    padding-top: 35px;
+  }
+}
